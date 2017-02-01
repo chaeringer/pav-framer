@@ -40,8 +40,8 @@
         }
 
         var reader = new FileReader();
-        reader.onload = function(e){
-            renderImage(e.target.result);
+        reader.onload = function(event){
+            renderImage(event.target.result);
         };
         reader.readAsDataURL(src);
     }
@@ -53,7 +53,7 @@
     }
 
     document.getElementById('dropIt').addEventListener('drop', handleDropEvent, false);
-    document.getElementById('dropIt').addEventListener('dragover', (e) => e.preventDefault(), false);
+    document.getElementById('dropIt').addEventListener('dragover', (event) => event.preventDefault(), false);
 
     var canvas = document.getElementById('canvas');
     var context = canvas.getContext('2d');

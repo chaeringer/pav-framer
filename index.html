@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>pav framer</title>
+        <style>
+            body {
+                background: #e7e7e7;
+                margin: 0;
+                padding: 0;
+            }
+
+            #canvas {
+                width: 500px; 
+                height: 500px;
+            }
+            
+            #canvas,
+            #result {
+                margin: 20px;
+            }
+
+            #dropIt {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="dropIt">
+            <canvas id="canvas" width="500" height="500"></canvas> 
+            <img id="result" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" alt="result">
+        </div>
+        <script async  src="framer.js"></script>
+    </body>
+</html>

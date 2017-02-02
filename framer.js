@@ -2,12 +2,12 @@
 
     function createFrame() {
         context.beginPath();
-        context.moveTo(50, 50);
+        context.moveTo(40, 50);
         context.lineTo(450, 50);
         context.lineTo(450, 450);
         context.lineTo(50, 450);
         context.lineTo(50, 50);
-        context.lineWidth = 10;
+        context.lineWidth = 20;
         context.strokeStyle = 'white';
         context.stroke();
     }

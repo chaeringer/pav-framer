@@ -1,4 +1,4 @@
-(() => {
+(function() {
 
     function createFrame() {
         context.beginPath();
@@ -53,9 +53,9 @@
     }
 
     document.getElementById('dropIt').addEventListener('drop', handleDropEvent, false);
-    document.getElementById('dropIt').addEventListener('dragover', (event) => event.preventDefault(), false);
+    document.getElementById('dropIt').addEventListener('dragover', function(event) {event.preventDefault()}, false);
 
     var canvas = document.getElementById('canvas');
     var context = canvas.getContext('2d');
     renderImage('test.jpg');
-})()
+})();

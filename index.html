@@ -6,24 +6,26 @@
         <style>
             body {
                 background: #222;
+                color: #fff;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,  Helvetica, Arial, sans-serif;
+                font-size: 24px;
+                line-height: 40px;
                 margin: 0;
                 padding: 0;
             }
-            
-            #result {
-                margin: 20px;
-            }
-
-            #dropIt {
-                width: 100%;
-                height: 100vh;
-            }
+            #result { margin: 20px; float: left;}
+            ol { float: left; }
+            #dropIt { width: 100%; height: 100vh;}
         </style>
     </head>
     <body>
         <div id="dropIt">
             <canvas id="canvas" width="500" height="500" style="display: none;"></canvas> 
-            <img id="result" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" alt="result">
+            <img id="result" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" width="500" height="500" alt="result">
+            <ol>
+                <li>Drag & drop your image into this window</li>
+                <li>Download image (right click / save as)</li>
+            </ol>
         </div>
         <script async  src="framer.js"></script>
     </body>
